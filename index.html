@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakir Khan - Software Engineer | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Added EmailJS for contact form functionality -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Added Toastify for notifications -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</head>
+<body>
+    <!-- Added loading screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">LK</div>
+            <div class="loading-text">Loading Portfolio...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">LK</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <!-- Added theme toggle button -->
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Hello, I'm</span>
+                    <span class="hero-name">Lakir Khan</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span id="typed-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    I build accessible, pixel-perfect digital experiences for the web, 
+                    specializing in full-stack development with modern JavaScript frameworks and backend technologies.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <div class="scroll-indicator">
+                    <span>Scroll Down</span>
+                    <div class="scroll-arrow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a passionate software engineer with expertise in full-stack development, 
+                        specializing in creating robust, scalable applications that solve real-world problems.
+                    </p>
+                    <p>
+                        Currently pursuing my Bachelor of Engineering in Computer Science and Technology 
+                        at LJ Institute of Engineering and Technology (LJIET), I have maintained first-class 
+                        distinction throughout my academic journey, achieving a 7.78 SPI in my 6th semester.
+                    </p>
+                    <p>
+                        With hands-on experience in React.js, Node.js, Laravel, and modern web technologies, 
+                        I've worked on various live projects including ERP systems, CRM platforms, and 
+                        e-procurement solutions. I'm passionate about creating efficient, user-friendly 
+                        applications that make a difference.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="15">0</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="2">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="10">0</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <!-- Updated with actual education information -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2026</div>
+                        <h3>Bachelor of Engineering</h3>
+                        <h4>LJ Institute of Engineering and Technology (LJIET)</h4>
+                        <p>Computer Science and Technology Engineering. Currently in 6th semester with first-class distinction. 
+                           Achieved 7.78 SPI in 6th semester. Specializing in full-stack development, data structures, 
+                           algorithms, and modern web technologies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022</div>
+                        <h3>Higher Secondary Certificate (HSC)</h3>
+                        <h4>Divine Buds School, Maninagar, Ahmedabad</h4>
+                        <p>Completed 12th standard with 55%. Built strong foundation in Mathematics, Physics, 
+                           and Computer Science, developing analytical and problem-solving skills.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020</div>
+                        <h3>Secondary School Certificate (SSC)</h3>
+                        <h4>Vision School of Science, Nadiad</h4>
+                        <p>Completed 10th standard with outstanding 94%. Demonstrated excellence in academics 
+                           and developed strong fundamentals in science and mathematics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React.js / JavaScript</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML5 / CSS3</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Bootstrap / Tailwind CSS</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Node.js / Express</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Laravel / PHP</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="82"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Git / GitHub</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Bill Of Material System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Bill Of Material (BOM) System</h3>
+                        <p>Comprehensive BOM management system built with Laravel and Filament. Features include material tracking, cost calculation, and inventory management for manufacturing processes.</p>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                            <span>Filament</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Asset Valuation System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Asset Valuation System</h3>
+                        <p>Financial asset management platform for tracking and valuing company assets. Includes depreciation calculations, reporting, and audit trail functionality.</p>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>Filament</span>
+                            <span>JavaScript</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=250&width=400" alt="Printing CRM System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Printing CRM with Full ERP</h3>
+                        <p>Complete ERP solution for printing businesses with CRM, order management, inventory tracking, and financial reporting. Built for scalability and efficiency.</p>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                            <span>Filament Shield</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Achievements & Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>First Class Distinction</h3>
+                        <p>Maintained first-class distinction throughout engineering studies with 7.78 SPI in 6th semester at LJIET.</p>
+                        <span class="achievement-date">2022-2026</span>
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Full Stack Development</h3>
+                        <p>Expertise in modern web technologies including React.js, Node.js, Laravel, and various frameworks for building scalable applications.</p>
+                        <span class="achievement-date">2024</span>
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Live Project Experience</h3>
+                        <p>Successfully delivered multiple live projects including ERP systems, CRM platforms, and e-procurement solutions for real clients.</p>
+                        <span class="achievement-date">2024-2025</span>
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Academic Excellence</h3>
+                        <p>Achieved 94% in SSC (10th standard) demonstrating consistent academic performance and dedication to learning.</p>
+                        <span class="achievement-date">2020</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="experience-timeline">
+                <!-- Updated with actual work experience -->
+                <div class="experience-item">
+                    <div class="experience-dot"></div>
+                    <div class="experience-content">
+                        <div class="experience-date">June 2024 - Present</div>
+                        <h3>Software Engineering Intern</h3>
+                        <h4>OTFCoder PVT LTD, Makarba, Ahmedabad</h4>
+                        <p>Currently working on various live projects including Bill Of Material (BOM), Asset Valuation, 
+                           and Printing CRM with Full ERP system. Developing scalable web applications using Laravel, 
+                           PHP, Filament, and modern web technologies. Collaborating with cross-functional teams to 
+                           deliver high-quality software solutions for clients.</p>
+                        <div class="experience-skills">
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                            <span>Filament</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>Filament Shield</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-dot"></div>
+                    <div class="experience-content">
+                        <div class="experience-date">January 2025 - June 2025</div>
+                        <h3>Full Stack Developer</h3>
+                        <h4>E-procurement Technology Pvt Ltd, Ellis Bridge, Ahmedabad</h4>
+                        <p>Developed and maintained user-facing features using React.js, ensuring high performance and 
+                           seamless user experience. Implemented responsive UI components with Material UI and Bootstrap, 
+                           focusing on accessibility and cross-browser compatibility. Managed state using Redux and 
+                           integrated RESTful APIs efficiently using Axios. Enhanced application performance through 
+                           Webpack optimization, lazy loading, and code splitting.</p>
+                        <div class="experience-skills">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>CSS</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                            <span>GitHub</span>
+                            <span>Git</span>
+                            <span>Redux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+                <p class="section-description">
+                    I'm always interested in new opportunities and exciting projects. 
+                    Let's discuss how we can work together!
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>pathanlucky156@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+91 7578124510</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Ahmedabad, Gujarat, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Lakirkhan" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/lakirkhan/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.twitter.com/lakirkhan_454?igsh=cXJ2a3hyc2lmbW5y" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/lakirkhan_454?igsh=cXJ2a3hyc2lmbW5y" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <span class="form-error" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <span class="form-error" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <span class="form-error" id="subject-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                        <span class="form-error" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loader" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Added chatbot -->
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-toggle" id="chatbot-toggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <h4>Chat with Lakir</h4>
+                <button class="chatbot-close" id="chatbot-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="chatbot-message bot-message">
+                    <div class="message-content">
+                        Hi! I'm Lakir's virtual assistant. How can I help you today?
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbot-input" placeholder="Type your message...">
+                <button id="chatbot-send">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Lakir Khan. All rights reserved.</p>
+                <p>Designed & Built with ❤️ by Lakir Khan</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
